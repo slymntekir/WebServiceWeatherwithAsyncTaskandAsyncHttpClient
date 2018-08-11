@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tekir.suleyman.webserviceweather.MainActivity"
+    android:orientation="vertical">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Şehir Giriniz.."
+        android:textColorHint="#000"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:id="@+id/ed_sehir"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sorgula"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:onClick="veriCek"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:id="@+id/tv_sonuc"
+                android:textColor="#000"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
