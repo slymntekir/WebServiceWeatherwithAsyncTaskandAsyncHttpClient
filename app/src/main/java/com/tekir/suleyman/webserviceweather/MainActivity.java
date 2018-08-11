@@ -14,7 +14,7 @@ import org.json.JSONObject;
 import cz.msebera.android.httpclient.Header;
 
 public class MainActivity extends AppCompatActivity {
-    private static final String ID = "68d5fa3aa33ec43249bfbde7bc97ac2b";
+    private static final String ID = "yourId from openweathermap.org";
     private String URL = "";
     private String sehir="";
     private EditText ed_sehir;
